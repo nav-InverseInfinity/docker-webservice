@@ -1,9 +1,5 @@
-# Docker-webservice
+# Kubernetes-Project-Source files
 
-Build and run Apache httpd service on your local port
-
-docker build . -t [name-of-the-image]
- 
- docker run -d -p 80:80 --name web [name-of-the-image]
+With CI/CD pipeline, pulling files from Github repo and copying the deployment and playbook files to Ansible server. FRom Ansible server, using ansible playbook Kubernetes deployment will be implemented and website up & running.
   
  

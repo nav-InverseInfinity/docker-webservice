@@ -1,0 +1,15 @@
+---
+
+- hosts: webserver
+  become: true
+  user: ubuntu
+  
+  tasks:
+  - name: Copying kubernetes deployment file
+    copy:
+      src: /home/ec2-user/ansible/website-deployment.yml
+      dest: /home/ubuntu/website-deployment.yml
+
+  tasks:
+  - name: Deployment
+    command: kubectl apply -f website-deployment.yml

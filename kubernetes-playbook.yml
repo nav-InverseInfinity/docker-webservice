@@ -10,6 +10,7 @@
       src: /home/ec2-user/ansible/website-deployment.yml
       dest: /home/ubuntu/website-deployment.yml
 
-  tasks:
-  - name: Deployment
+  
+  - name: Kubernetes Deployment
     command: kubectl apply -f website-deployment.yml
+

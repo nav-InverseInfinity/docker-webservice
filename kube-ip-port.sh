@@ -2,7 +2,7 @@
 
 #This script is to display the ip and port where the website is up and running!!!
 
-#Kubernetes deployment name - "web"
+#Kubernetes service name - "web"
 
 check="web"
 

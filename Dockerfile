@@ -18,4 +18,4 @@ RUN sed -i 's/>vibes</>Breeze</g' index.html
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
-EXPOSE 80 22
+EXPOSE 80

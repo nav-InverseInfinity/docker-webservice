@@ -14,6 +14,8 @@ RUN unzip ocean-vibes.zip
 
 RUN cp -r ./*vibes/* ./
 
+RUN sed -i 's/>vibes</>Breeze</g' index.html
+
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 EXPOSE 80 22

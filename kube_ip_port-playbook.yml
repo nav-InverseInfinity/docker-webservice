@@ -3,7 +3,6 @@
 - hosts: webserver
   become_user: root
   become: true
-  gather_facts: false
 
   tasks:
   - script: kube-ip-port.sh

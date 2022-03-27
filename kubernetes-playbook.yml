@@ -11,6 +11,14 @@
       dest: /home/ubuntu/website-deployment.yml
 
   
-  - name: Kubernetes Deployment
+  - name: Delete deployment if alread exist
+    command: kubectl delete deployment/web
+    ignore_errors: True
+    
+  - name: Delete service if alread exist
+    command: kubectl delete service/web
+    ignore_errors: True
+    
+  - name: Kubernetes deployment
     command: kubectl apply -f website-deployment.yml
 
